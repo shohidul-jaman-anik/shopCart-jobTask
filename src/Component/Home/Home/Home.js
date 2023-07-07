@@ -4,6 +4,8 @@ import Alexa from '../Alexa/Alexa';
 import HotDeals from '../HotDeals/HotDeals';
 import SearchItems from '../SearchItems/SearchItems';
 import SpecialOffer from '../SpecialOffer/SpecialOffer';
+import Furnitures from '../Furnitures/Furnitures';
+import Reviews from '../Reviews/Reviews';
 
 const Home = () => {
     return (
@@ -13,6 +15,8 @@ const Home = () => {
             <HotDeals></HotDeals>
             <SearchItems></SearchItems>
             <SpecialOffer></SpecialOffer>
+            <Furnitures></Furnitures>
+            <Reviews></Reviews>
         </div>
     );
 };

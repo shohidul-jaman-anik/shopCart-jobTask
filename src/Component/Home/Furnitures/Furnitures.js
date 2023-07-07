@@ -1,24 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import "./HotDeal.css";
+import "./Furnitures.css"
 
-
-const HotDeals = () => {
-    const [HotDeals, setHotDeals] = useState([])
+const Furnitures = () => {
+    const [furnitures, setFurnitures] = useState([])
 
     useEffect(() => {
         fetch("https://api.hiring.masterkey.tech/api/v1/products")
             .then(res => res.json())
             .then(data => {
-                setHotDeals(data.products[0].productData.slice(6, 11))
+                setFurnitures(data.products[0].productData.slice(17, 21))
             })
     }, [])
     return (
-
-        <div className='container'>
-            <h2 className='mt-10 mb-5'>Today Hot Deal's</h2>
-            <div class="hotDealComponent ">
+          <div className='container'>
+            <h2 className='mt-10 mb-5'>Deals on furniture</h2>
+            <div class="furnitureComponent ">
                 {
-                    HotDeals?.map(product =>
+                    furnitures?.map(product =>
                         <div className='nftCard'>
                             <div>
                                 <img src={product.product_img} alt="" />
@@ -33,8 +31,7 @@ const HotDeals = () => {
                 }
             </div>
         </div>
-
     );
 };
 
-export default HotDeals;
+export default Furnitures;
