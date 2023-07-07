@@ -6,11 +6,13 @@ import SearchItems from '../SearchItems/SearchItems';
 import SpecialOffer from '../SpecialOffer/SpecialOffer';
 import Furnitures from '../Furnitures/Furnitures';
 import Reviews from '../Reviews/Reviews';
+import Products from '../Products/Products';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
+            <Products></Products>
             <Alexa></Alexa>
             <HotDeals></HotDeals>
             <SearchItems></SearchItems>

@@ -13,7 +13,10 @@ const Banner = () => {
             })
     }, [])
     return (
+
+        
         <div id="banner" class="bannerContainer container ">
+
 
             <div class="py-20">
                 <h1 class="BannerHeading">We picked some cool things for you!</h1>
